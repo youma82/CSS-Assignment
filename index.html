@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Tyson's Personal Webpage - Boxing Champion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    background-color: blue;
+    height: 25%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav_bar {
+    background-color: red;
+    width: 20%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.main_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ثلاثة أعمدة للمربعات الأرجوانية */
+    grid-template-rows: auto 1fr; /* صف للمربعات الأرجوانية وصف للمربع الوردي */
+    gap: 10px;
+    background-color: yellow;
+    width: 100%;
+    padding: 10px;
+}
+
+.box {
+    background-color: purple;
+}
+
+.box1, .box2, .box3 {
+    height: 400px; /* تحديد ارتفاع للمربعات الأرجوانية */
+}
+
+.advertisements {
+    grid-column: span 3; /* اجعل المربع الوردي يمتد على الثلاثة أعمدة */
+    background-color: pink;
+    height: 100px; /* تحديد ارتفاع للمربع الوردي */
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="content">
+            <div class="nav_bar"></div>
+            <div class="main_content">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="advertisements"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
