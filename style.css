@@ -1,0 +1,43 @@
+#gray {
+    background-color: darkgrey;
+    height: auto;
+    padding: 10px;
+}
+#blue {
+    background-color: blue;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+#red {
+background-color: red;
+width: 30%;
+height: 600px;
+
+}
+
+#yellow {
+    width: 70%;
+    background-color: yellow;
+    height: 700px;
+    padding: 50px;
+}
+.flex-box {
+    display: flex;
+    gap: 50px;
+}
+.purple {
+width: 30%;
+background-color: purple;
+height: 400px;
+}
+.holder-container {
+    display: flex;
+    justify-content: space-between;
+}
+#pink {
+    background-color: pink;
+    height: 300px;
+    margin-top: 20px;
+
+}
